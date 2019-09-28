@@ -59,4 +59,20 @@ public class NestedIfExampleTest {
         int expectedresult = 10;
         assertEquals(expectedresult,result);
     }
+    @Test
+    public void testGetDiscount2() {
+        NestedIfExample nestedIfExample = new NestedIfExample();
+        int result = nestedIfExample.getDiscount(5000,3);
+        System.out.println(result);
+        int expectedresult = 9;
+        assertEquals(expectedresult,result);
+    }
+    @Test
+    public void testGetDiscount3() {
+        NestedIfExample nestedIfExample = new NestedIfExample();
+        int result = nestedIfExample.getDiscount(10,15);
+        System.out.println(result);
+        int expectedresult = 5;
+        assertEquals(expectedresult,result);
+    }
 }
